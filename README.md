@@ -12,6 +12,7 @@ de missões, aplicando conceitos de programação **orientada a objetos:** heran
 >https://docs.google.com/document/d/1wcP3M69XeQRGJkQ4Yl0ZDhgWQYI5aLzcFmNWLU-mKc0/edit?usp=sharing]
 ######🛠 A modelagem:
 >https://drive.google.com/file/d/1Sk9rguxk_VOn_IL3yiO_140g1rKZEytC/view?usp=sharing
+
 ###Contribuição:
 
 >Annielle Crispim e Medeiros
