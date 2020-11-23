@@ -16,6 +16,22 @@ public class Missao {
         this.setDisponivel(true);
     }
 
+    public void iniciarMissao() {
+        this.status = "Em andamento.";
+        this.setDisponivel(false);
+    }
+
+    public void falharMissao() {
+        this.status = "Não Concluida";
+        this.setDisponivel(true);
+    }
+
+    public Item concluirMissao() {
+        this.status = "Conluida";
+        this.setDisponivel(false);
+        return this.recompensa;
+    }
+
     public int getDificuldade() {
         return dificuldade;
     }
@@ -32,6 +48,13 @@ public class Missao {
         this.disponivel = disponivel;
     }
 
+    public Item getRecompensa() {
+        return recompensa;
+    }
+
+    public String getStatus() {
+        return status;
+    }
     public void setTituloDaMissao(String tituloDaMissao) {
         this.tituloDaMissao = tituloDaMissao;
     }
