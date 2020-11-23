@@ -8,5 +8,4 @@ public class Guerreiro {
     private int resistenciaMagica;
     private int passivaDefesa;
 
-
 }
