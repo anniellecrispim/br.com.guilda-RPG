@@ -30,4 +30,26 @@ public class Aventureiro extends Pessoa {
         this.bolsa = new ArrayList();
 
     }
+    public String iniciarMissao(Missao novaMissao) {
+        if(this.rank >= novaMissao.getDificuldade() && novaMissao.getDisponivel() == true) {
+            this.atualMissao = novaMissao;
+            this.atualMissao.iniciarMissao();
+            return "Missão aceita.";
+        } else if(this.rank < novaMissao.getDificuldade()) {
+            return "A missão é muito difícil para você agora";
+        } else if(novaMissao.getDisponivel() != true) {
+            return "Já tem alguém fazendo essa missão";
+        }
+        return "erro, opção inválida";
+    }
+    public String fracassarMissao() {
+        this.atualMissao.falharMissao();
+        return "Você não conseguiu concluir a missão.";
+
+    }
+
+    public String concluirMissao() {
+        this.bolsa.add(this.atualMissao.concluirMissao());
+        return "Parabéns, você concluiu a missão e ganhou "+ this.atualMissao.getRecompensa();
+    }
 }
