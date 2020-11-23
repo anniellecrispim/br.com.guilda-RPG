@@ -12,7 +12,6 @@ public class Aventureiro extends Pessoa {
     private Missao atualMissao;
     private int rank;
     private ArrayList<Item> bolsa;
-    //private Classe classe;
 
     public Aventureiro(String nome, String genero, int idade, double altura,
                        String numeroDeRegistro, String primeiraSkill, String segundaSkill,
