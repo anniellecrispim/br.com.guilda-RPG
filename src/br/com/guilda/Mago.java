@@ -1,6 +1,6 @@
 package br.com.guilda;
 
-public class Mago extends Aventureiro implements ItemInterface  {
+public class Mago extends Aventureiro{
 
     private String tipoDeDano;
     private int dano;
@@ -17,10 +17,10 @@ public class Mago extends Aventureiro implements ItemInterface  {
                 numeroDeRegistro, primeiraSkill, segundaSkill,
                 terceiraSkill, quartaSkill, ultimateSkill);
 
-        this.tipoDeDano = tipoDeDano;
-        this.dano = dano;
-        this.armadura = armadura;
-        this.resistenciaMagica = resistenciaMagica;
+        this.setTipoDeDano(tipoDeDano);
+        this.setDano(dano);
+        this.setArmadura(armadura);
+        this.setResistenciaMagica(resistenciaMagica);
         this.curar = curar;
 
     }
@@ -30,7 +30,38 @@ public class Mago extends Aventureiro implements ItemInterface  {
     }
 
     public String toString() {
-        return "é um mago " + this.getNome();
+        return "Este aventureiro é o Grande Mago: " + this.getNome() + " do rank " + this.getRank();
+    }
+    public String getTipoDeDano() {
+        return tipoDeDano;
+    }
+    public void setTipoDeDano(String tipoDeDano) {
+        this.tipoDeDano = tipoDeDano;
+    }
+    public int getDano() {
+        return dano;
+    }
+    public void setDano(int dano) {
+        this.dano = dano;
+    }
+    public int getArmadura() {
+        return armadura;
+    }
+    public void setArmadura(int armadura) {
+        this.armadura = armadura;
+    }
+    public int getResistenciaMagica() {
+        return resistenciaMagica;
+    }
+    public void setResistenciaMagica(int resistenciaMagica) {
+        this.resistenciaMagica = resistenciaMagica;
+    }
+    public int getcurar() {
+        return curar;
+    }
+
+    public void setcurar(int curar) {
+        this.curar = curar;
     }
 
 }

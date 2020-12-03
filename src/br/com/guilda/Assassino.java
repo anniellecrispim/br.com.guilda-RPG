@@ -1,6 +1,6 @@
 package br.com.guilda;
 
-public class Assassino extends Aventureiro implements ItemInterface  {
+public class Assassino extends Aventureiro  {
 
     private String tipoDeDano;
     private int dano;
@@ -20,7 +20,7 @@ public class Assassino extends Aventureiro implements ItemInterface  {
 
         this.tipoDeDano = tipoDeDano;
         this.dano = dano;
-        this.armadura = armadura;
+        this.setArmadura(armadura);
         this.resistenciaMagica = resistenciaMagica;
         this.danoLetal = danoLetal;
 
@@ -29,9 +29,47 @@ public class Assassino extends Aventureiro implements ItemInterface  {
     public void usarItem(ItemClasse Item) {
         this.dano = this.dano + Item.getAtributo();
     }
+    public String getTipoDeDano() {
+        return tipoDeDano;
+    }
+
+    public void setTipoDeDano(String tipoDeDano) {
+        this.tipoDeDano = tipoDeDano;
+    }
+
+    public int getDano() {
+        return dano;
+    }
+
+    public void setDano(int dano) {
+        this.dano = dano;
+    }
+
+    public int getResistenciaMagica() {
+        return resistenciaMagica;
+    }
+
+    public void setResistenciaMagica(int resistenciaMagica) {
+        this.resistenciaMagica = resistenciaMagica;
+    }
+
+    public int getdanoLetal() {
+        return danoLetal;
+    }
+
+    public void setdanoLetal(int danoLetal) {
+        this.danoLetal = danoLetal;
+    }
 
     public String toString() {
-        return "é um assasino " + this.getNome();
+        return "Este aventureiro é o Grande Assassino: " + this.getNome() + " do rank " + this.getRank();
     }
+    public int getArmadura() {
+        return armadura;
+    }
+    public void setArmadura(int armadura) {
+        this.armadura = armadura;
+    }
+
 
 }

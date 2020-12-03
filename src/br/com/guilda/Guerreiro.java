@@ -1,6 +1,6 @@
 package br.com.guilda;
 
-public class Guerreiro extends Aventureiro implements ItemInterface {
+public class Guerreiro extends Aventureiro{
 
     private String tipoDeDano;
     private int dano;
@@ -64,7 +64,7 @@ public class Guerreiro extends Aventureiro implements ItemInterface {
     }
 
     public String toString() {
-        return "é um guerreiro " + this.getNome();
+        return "Este aventureiro é o Grande Guerreiro: " + this.getNome() + " do rank " + this.getRank();
     }
 
 }

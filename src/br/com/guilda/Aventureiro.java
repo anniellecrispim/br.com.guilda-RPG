@@ -36,24 +36,24 @@ public class Aventureiro extends Pessoa {
         if(this.rank >= novaMissao.getDificuldade() && novaMissao.getDisponivel() == true) {
             this.atualMissao = novaMissao;
             this.atualMissao.iniciarMissao();
-            return "Missão aceita.";
+            return "MissÃ£o aceita.";
         } else if(this.rank < novaMissao.getDificuldade()) {
-            return "A missão é muito difícil para você agora";
+            return "A missÃ£o Ã© muito difÃ­cil para vocÃª agora";
         } else if(novaMissao.getDisponivel() != true) {
-            return "Já tem alguém fazendo essa missão";
+            return "JÃ¡ tem alguÃ©m fazendo essa missÃ£o";
         }
-        return "erro, opção inválida";
+        return "erro, opÃ§Ã£o invÃ¡lida";
     }
 
     public String fracassarMissao() {
         this.atualMissao.falharMissao();
-        return "Você não conseguiu concluir a missão.";
+        return "VocÃª nÃ£o conseguiu concluir a missÃ£o.";
 
     }
 
     public String concluirMissao() {
         this.bolsa.add(this.atualMissao.concluirMissao());
-        return "Parabéns, você concluiu a missão e ganhou "+ this.atualMissao.getRecompensa();
+        return "ParabÃ©ns, vocÃª concluiu a missÃ£o e ganhou "+ this.atualMissao.getRecompensa();
     }
 
     public int getNumeroDeRegistro() {
@@ -62,6 +62,9 @@ public class Aventureiro extends Pessoa {
 
     public void setRank(int rank) {
         this.rank = rank;
+    }
+    public int getRank() {
+        return rank;
     }
 
     public String getPrimeiraSkill() {
@@ -102,5 +105,13 @@ public class Aventureiro extends Pessoa {
 
     public void setUltimateSkill(String ultimateSkill) {
         this.ultimateSkill = ultimateSkill;
+    }
+    public ArrayList<ItemClasse> getBolsa() {
+        return bolsa;
+    }
+
+
+    public void usarItem(ItemClasse Item) {
+
     }
 }
