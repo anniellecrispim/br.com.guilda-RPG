@@ -4,17 +4,21 @@ public class Missao {
 
     private String tituloDaMissao;
     private int dificuldade;
-    private Item recompensa;
+    private ItemClasse recompensa;
     private String status;
     private boolean disponivel;
+    private int numeroMissao;
 
-    public Missao(String tituloDaMissao,int dificuldade, Item recompensa) {
+
+    public Missao(String tituloDaMissao,int dificuldade, ItemClasse recompensa, int numeroMissao) {
         this.setTituloDaMissao(tituloDaMissao);
         this.setDificuldade(dificuldade);
-        this.recompensa = recompensa;
+        this.recompensa = (ItemClasse) recompensa;
         this.status = "Disponível";
         this.setDisponivel(true);
+        this.numeroMissao = numeroMissao;
     }
+
 
     public void iniciarMissao() {
         this.status = "Em andamento.";
@@ -26,11 +30,22 @@ public class Missao {
         this.setDisponivel(true);
     }
 
-    public Item concluirMissao() {
+    public ItemClasse concluirMissao() {
         this.status = "Conluida";
         this.setDisponivel(false);
         return this.recompensa;
     }
+
+
+    public boolean getDisponivel() {
+        return disponivel;
+    }
+
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
+    }
+
 
     public int getDificuldade() {
         return dificuldade;
@@ -40,23 +55,29 @@ public class Missao {
         this.dificuldade = dificuldade;
     }
 
-    public boolean getDisponivel() {
-        return disponivel;
-    }
-
-    public void setDisponivel(boolean disponivel) {
-        this.disponivel = disponivel;
-    }
-
-    public Item getRecompensa() {
+    public ItemClasse getRecompensa() {
         return recompensa;
     }
 
     public String getStatus() {
         return status;
     }
+
     public void setTituloDaMissao(String tituloDaMissao) {
         this.tituloDaMissao = tituloDaMissao;
     }
 
+    public int getNumeroMissao() {
+        return numeroMissao;
+    }
+
+    private String getTituloDaMissao() {
+        return tituloDaMissao;
+    }
+
+    public String toString() {
+        return "O nome da Missão é " + this.getTituloDaMissao()
+                + " com dificuldade " + this.getDificuldade()
+                + " e a recompensa é" + this.getRecompensa() ;
+    }
 }
