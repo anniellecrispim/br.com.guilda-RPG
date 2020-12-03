@@ -14,7 +14,7 @@ public class Missao {
         this.setTituloDaMissao(tituloDaMissao);
         this.setDificuldade(dificuldade);
         this.recompensa = (ItemClasse) recompensa;
-        this.status = "Disponível";
+        this.status = "DisponÃ­vel";
         this.setDisponivel(true);
         this.numeroMissao = numeroMissao;
     }
@@ -26,7 +26,7 @@ public class Missao {
     }
 
     public void falharMissao() {
-        this.status = "Não Concluida";
+        this.status = "NÃ£o Concluida";
         this.setDisponivel(true);
     }
 
@@ -76,8 +76,8 @@ public class Missao {
     }
 
     public String toString() {
-        return "O nome da Missão é " + this.getTituloDaMissao()
+        return "O nome da MissÃ£o Ã© " + this.getTituloDaMissao()
                 + " com dificuldade " + this.getDificuldade()
-                + " e a recompensa é" + this.getRecompensa() ;
+                + " e a recompensa Ã©" + this.getRecompensa() ;
     }
 }
