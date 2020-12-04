@@ -56,6 +56,10 @@ public class Aventureiro extends Pessoa {
         return "ParabÃ©ns, vocÃª concluiu a missÃ£o e ganhou "+ this.atualMissao.getRecompensa();
     }
 
+    public void receberRecompensa(Missao missaoConcluida) {
+        this.bolsa.add(missaoConcluida.getRecompensa());
+    }
+
     public int getNumeroDeRegistro() {
         return numeroDeRegistro;
     }
