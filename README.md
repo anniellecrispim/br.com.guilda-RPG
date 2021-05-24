@@ -4,11 +4,11 @@ Um projeto de gerenciamento de **guilda**, focado em aventureiros e em realizaç
 de missões, aplicando conceitos de programação **orientada a objetos:** herança, polimorfismo, composição e
  imutabilidade.
  
-###Status do Projeto:
+### Status do Projeto:
 
 ###### Em Andamento 🚀 [...]
 
-###Link do Relatório:
+### Link do Relatório:
 >https://docs.google.com/document/d/1wcP3M69XeQRGJkQ4Yl0ZDhgWQYI5aLzcFmNWLU-mKc0/edit?usp=sharing]
 ######🛠 A modelagem:
 >https://drive.google.com/file/d/1Sk9rguxk_VOn_IL3yiO_140g1rKZEytC/view?usp=sharing
