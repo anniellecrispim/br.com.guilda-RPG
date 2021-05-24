@@ -1,4 +1,4 @@
-#Guilda-RPG
+# Guilda-RPG
 
 Um projeto de gerenciamento de **guilda**, focado em aventureiros e em realizações 
 de missões, aplicando conceitos de programação **orientada a objetos:** herança, polimorfismo, composição e
@@ -13,7 +13,7 @@ de missões, aplicando conceitos de programação **orientada a objetos:** heran
 ######🛠 A modelagem:
 >https://drive.google.com/file/d/1Sk9rguxk_VOn_IL3yiO_140g1rKZEytC/view?usp=sharing
 
-###Contribuição:
+### Contribuição:
 
 >Annielle Crispim e Medeiros
  ######Analista de requisitos & desenvolvimento.
