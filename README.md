@@ -6,7 +6,7 @@ de missões, aplicando conceitos de programação **orientada a objetos:** heran
  
 ### Status do Projeto:
 
-###### Em Andamento 🚀 [...]
+###### Concluído 🚀 [...]
 
 ### Link do Relatório:
 >https://docs.google.com/document/d/1wcP3M69XeQRGJkQ4Yl0ZDhgWQYI5aLzcFmNWLU-mKc0/edit?usp=sharing]
